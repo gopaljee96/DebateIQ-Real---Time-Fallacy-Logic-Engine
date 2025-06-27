@@ -37,5 +37,5 @@ Built using advanced speech processing and NLP pipelines, it transcribes spoken 
 ### 📥 Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Priyanshu-Builds/DebateIQ.git
+git clone https://github.com/gopaljee96
 cd DebateIQ
