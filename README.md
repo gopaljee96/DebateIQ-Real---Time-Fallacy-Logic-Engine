@@ -40,29 +40,6 @@ Built using advanced speech processing and NLP pipelines, it transcribes spoken 
 git clone [https://github.com/gopaljee96](https://github.com/gopaljee96/DebateIQ-Real---Time-Fallacy-Logic-Engine.git)
 cd DebateIQ
 
----
-
-## ⚙️ Setup Instructions
-
-Follow the steps below to install and run the application locally:
-
----
-
-### 📦 Step 2: Install Dependencies
-
-Install all required libraries using the `requirements.txt` file. Make sure you're using **Python 3.12+**.
-
-```bash
-pip install -r requirements.txt
-
-
-🔑 Step 3: Add Your Gemini API Key
-The Gemini API is required for real-time logic and fallacy detection.
-
-Create a .env file in the root directory of the project.
-
-Add your Gemini API key in the following format:
-GEMINI_API_KEY=your_gemini_api_key_here
 
 
 
