@@ -48,64 +48,31 @@ Follow the steps below to install and run the application locally:
 
 ---
 
-## ⚙️ Setup Instructions
-
-Follow the steps below to install and run the DebateIQ system locally on your machine:
-
----
-
-📦 Step 2: Install Dependencies
-
-Install all required libraries using the requirements.txt file. Make sure you're using Python 3.12+.
-
-Run the following command:
-
-    pip install -r requirements.txt
-
-If you face issues with multimedia dependencies like pyaudio or ffmpeg, use your OS’s package manager:
-
-For Debian/Ubuntu:
-
-    sudo apt-get install portaudio19-dev ffmpeg
-
-For macOS with Homebrew:
-
-    brew install portaudio ffmpeg
-
----
 
 🔑 Step 3: Add Your Gemini API Key
+The Gemini API is required for real-time logic and fallacy detection. To use it:
 
-The Gemini API is required for real-time logic and fallacy detection. To set it up:
+Create a .env file in the root of the project directory.
 
-1. Create a `.env` file in the root directory of the project.
-
-2. Inside `.env`, add your API key in the following format (without quotes):
-
-    GEMINI_API_KEY=your_gemini_api_key_here
-
-Notes:
-- Do not use quotes or add trailing spaces.
-- Ensure the `.env` file is listed in `.gitignore` so it’s not pushed to your repo.
+Add your Gemini API key using the format below.
+# .env file
+GEMINI_API_KEY=your_gemini_api_key_here
 
 ---
-
 🚀 Step 4: Run the Application
+Once the dependencies and API key are configured, launch the Flask server:
+# Run the Flask server
+python server.py
 
-Start the Flask server to launch the web interface.
+After the server starts, open your browser and navigate to:
+http://localhost:5000/
 
-Use the command below:
 
-    python server.py
 
-Once the server is running, open your browser and go to:
 
-    http://localhost:5000/
 
-Now you can:
-- 🎤 Speak into your mic and see transcribed text.
-- 🧠 Get real-time fallacy detection.
-- 📊 View reasoning insights on the live dashboard.
+
+
 
 
 
