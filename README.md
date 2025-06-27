@@ -1,58 +1,41 @@
-# DebateIQ-Real---Time-Fallacy-Logic-Engine
-DebateIQ is a real-time reasoning analytics system designed to identify flawed logic and fallacious arguments in spoken or multimedia content. Whether used in debate rooms, legal environments, or live broadcasts, DebateIQ empowers users with instant insights into the quality of reasoning in conversations.
+# 🚀 DebateIQ – Real-Time Fallacy & Logic Engine
+
+**DebateIQ** is a real-time reasoning analytics system designed to identify flawed logic and fallacious arguments in spoken or multimedia content. Whether used in debate rooms, legal environments, or live broadcasts, DebateIQ empowers users with instant insights into the quality of reasoning in conversations.
 
 Built using advanced speech processing and NLP pipelines, it transcribes spoken content and evaluates its logical consistency on the fly using large language models.
 
-💡 What It Does
-🗣️ Real-Time Speech Capture
-Listens to microphone input and transcribes it into text using Google Cloud’s Speech-to-Text API.
+---
 
-🧩 Fallacy Analysis Engine
-Uses the Gemini API to process the text and identify logical fallacies like ad hominem, false cause, or strawman arguments.
+## 💡 What It Does
 
-🔄 Cross-Platform Input
-Supports not just live voice but also audio/video from YouTube, podcasts, and online meetings.
+- 🎙️ **Real-Time Speech Capture**  
+  Listens to microphone input and transcribes it into text using Google Cloud’s Speech-to-Text API.
 
-🌐 Web Interface
-A lightweight Flask-based UI displays analysis in real-time—ideal for multi-user scenarios like debates, journalism, or academic discussions.
+- 🧠 **Fallacy Analysis Engine**  
+  Uses the Gemini API to process the text and identify logical fallacies like ad hominem, false cause, or strawman arguments.
 
-🛠️ Tech Stack & Requirements
-Python 3.12+
+- 📡 **Cross-Platform Input Support**  
+  Works with live speech, YouTube videos, online meetings, and podcast audio.
 
-Flask for backend and frontend
+- 🌐 **Interactive Web Dashboard**  
+  Flask-based UI displays detected fallacies and insights in real-time for debate moderators, educators, or analysts.
 
-Google Speech Recognition (STT)
+---
 
-Gemini AI API for text reasoning
+## 🛠️ Tech Stack & Requirements
 
-Utilities: youtube-dlp, ffmpeg, pyaudio for multimedia ingestion
+- Python 3.12+
+- Flask (for backend and web interface)
+- Google Speech-to-Text API
+- Gemini API (logical fallacy detection)
+- `youtube-dlp`, `ffmpeg`, `pyaudio` (for multimedia handling)
 
-⚙️ Installation Guide
+---
 
+## ⚙️ Installation Guide
 
-🧪 How to Use
-Start Speaking – The system records and transcribes your voice to a text file.
+### 📥 Step 1: Clone the Repository
 
-Analyze – The text is sent to Gemini API, where logical fallacies are detected.
-
-View Output – The web interface shows the reasoning issues and feedback in real-time.
-
-🚀 Planned Features & Enhancements
-Integration with custom NLP models for domain-specific fallacy detection
-
-Improved streaming support from platforms like Zoom, Teams, or Twitter Spaces
-
-Enhanced response time and fallacy classification depth
-
-Visual analytics dashboard with argument scoring and speaker tagging
-
-🎯 Use Cases
-Academic debate evaluations
-
-Legal cross-examination analysis
-
-Journalism and fact-checking
-
-Public speaking coaching
-
-Podcast or video comment moderation
+```bash
+git clone https://github.com/Priyanshu-Builds/DebateIQ.git
+cd DebateIQ
